@@ -45,3 +45,9 @@ Your site URL will then be:
 - This release keeps the first four demos at higher quality and uses lighter compression for the extended gallery.
 - Unused legacy figures, duplicate videos, removed demo clips, and `.DS_Store` files have been cleaned out of this folder.
 - Earlier design variants are still preserved separately in `../MoRe-UAV.github.io` and `../MoRe-UAV.github.io-previous`.
+
+## One-Command Sync
+
+- Run `./sync_site.sh` in this folder to stage, commit, rebase onto `origin/main`, and push the current website.
+- Or run `./sync_site.sh "your commit message"` if you want a custom commit message.
+- If GitHub asks for authentication during `git push`, use a valid PAT instead of your account password.
