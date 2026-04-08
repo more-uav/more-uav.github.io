@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MoRe-UAV is a large-scale benchmark for motion-aware visual grounding in UAV videos.">
+  <meta name="description" content="MoRe-UAV is a large-scale benchmark for motion-aware visual grounding in UAV videos, with 22,225 video-expression pairs and 7.41M annotated frames.">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="MoRe-UAV: A Large-Scale Benchmark for Motion-Aware Visual Grounding in UAV Videos">
-  <meta property="og:description" content="A benchmark for motion-aware visual grounding in UAV videos.">
+  <meta property="og:description" content="A large-scale benchmark for motion-aware visual grounding in UAV videos, with 22,225 video-expression pairs and 7.41M annotated frames.">
   <meta property="og:url" content="https://more-uav.github.io/">
-  <meta property="og:image" content="./static/images/fig1-overview.jpg">
+  <meta property="og:image" content="./static/images/fig1try2.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MoRe-UAV: A Large-Scale Benchmark for Motion-Aware Visual Grounding in UAV Videos">
-  <meta name="twitter:description" content="A benchmark for motion-aware visual grounding in UAV videos.">
-  <meta name="twitter:image" content="./static/images/fig1-overview.jpg">
+  <meta name="twitter:description" content="A large-scale benchmark for motion-aware visual grounding in UAV videos, with 22,225 video-expression pairs and 7.41M annotated frames.">
+  <meta name="twitter:image" content="./static/images/fig1try2.png">
   <title>MoRe-UAV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/site.css">
   <script defer src="./assets/site.js"></script>
@@ -25,38 +25,45 @@
 <body>
   <header class="hero">
     <div class="container hero__inner">
-      <h1 class="hero__title reveal">MoRe-UAV: A Large-Scale Benchmark for Motion-Aware Visual Grounding in UAV Videos</h1>
+      <h1 class="hero__title reveal">MoRe-UAV: A Large-Scale Benchmark for Motion-Aware Visual Grounding in UAV&nbsp;Videos</h1>
 
       <div class="authors reveal">
         <span class="author">Zhipeng Zhang<sup>1</sup>,</span>
         <span class="author">Yiheng Zhang<sup>1</sup>,</span>
         <span class="author">Wei Suo<sup>1</sup>,</span>
         <span class="author">Le Liu<sup>1</sup>,</span>
+        <span class="author">Ji Wang<sup>1</sup>,</span>
         <span class="author">Peng Wang<sup>1</sup></span>
       </div>
 
       <p class="affiliation reveal"><sup>1</sup> School of Computer Science, Northwestern Polytechnical University, Xi'an, China</p>
 
       <div class="link-row reveal">
-        <a class="action-button is-disabled" href="javascript:void(0)" aria-disabled="true">
+        <a class="action-button" href="./static/pdfs/more-uav-paper.pdf" download>
           <i class="fa-solid fa-file-pdf"></i>
           <span>Paper</span>
         </a>
-        <a class="action-button is-disabled" href="javascript:void(0)" aria-disabled="true">
+        <a class="action-button" href="./static/downloads/more-uav-supplementary.pdf" download>
           <i class="fa-solid fa-book-open"></i>
           <span>Supplementary</span>
         </a>
-        <a class="action-button is-disabled" href="javascript:void(0)" aria-disabled="true">
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span>
+        <a class="action-button" href="./static/downloads/MoRe-UAV-Human-Verification-Tool.zip" download>
+          <i class="fa-solid fa-toolbox"></i>
+          <span>Verification Tool</span>
         </a>
-        <a class="action-button is-disabled" href="javascript:void(0)" aria-disabled="true">
+        <a class="action-button" href="https://github.com/johnbager/more-uav" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          <span>Code</span>
+        </a>
+        <a class="action-button" href="https://drive.google.com/drive/folders/1KDKjIvxHtZYHHxQxKrxzxs368npEc1Y1?usp=drive_link" target="_blank" rel="noopener noreferrer">
           <i class="fa-solid fa-database"></i>
           <span>Dataset</span>
         </a>
+        <a class="action-button" href="https://drive.google.com/drive/folders/1HOMfquXIHSN5HpVI8LBhAlIzoX73feLV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Small-scale dataset demo and visualization package for reviewer inspection">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>Dataset Demo</span>
+        </a>
       </div>
-
-      <p class="hero__note reveal">Paper, supplementary, code, and dataset links will be updated after release.</p>
     </div>
   </header>
 
@@ -64,10 +71,10 @@
     <section class="section section--teaser">
       <div class="container">
         <figure class="teaser-card reveal">
-          <img src="./static/images/fig1-overview.jpg" alt="Overview figure of the MoRe-UAV benchmark.">
+          <img src="./static/images/fig1try2.png" alt="Overview figure of the MoRe-UAV benchmark.">
         </figure>
         <p class="teaser-caption reveal">
-          Overview of <strong>MoRe-UAV</strong>, a benchmark for motion-aware visual grounding in UAV videos. The benchmark requires models to ground moving objects from moving viewpoints by jointly reasoning about motion cues and temporal dynamics.
+          Overview of <strong>MoRe-UAV</strong>. Top: representative UAV clips with moving targets, camera motion, and large viewpoint changes. Bottom: a typical task example. Unlike conventional UAV grounding that mainly relies on appearance or spatial cues, MoRe-UAV requires reasoning about motion cues under moving viewpoints.
         </p>
       </div>
     </section>
@@ -83,7 +90,7 @@
           <article class="panel abstract-card reveal">
             <h3>Abstract</h3>
             <p>
-              UAV visual grounding in real-world applications requires localizing a target referred to by language while both the target and the UAV move. Existing UAV grounding datasets mainly focus on images or video settings dominated by appearance and spatial cues, and therefore do not adequately capture two key challenges: motion-centric grounding and drastic cross-view appearance changes caused by UAV ego-motion. To address this gap, we introduce <strong>MoRe-UAV</strong>, a large-scale benchmark for motion-aware visual grounding in UAV videos. MoRe-UAV contains 22,225 video-expression pairs and 7,415,622 annotated frames, covering diverse aerial scenes with moving targets and substantial viewpoint changes. We build the dataset through a scalable human-in-the-loop pipeline for efficient annotation with quality control. We establish a representative benchmark on MoRe-UAV with spatio-temporal video grounding methods, multimodal large language models, and hybrid MLLM-tracking pipelines. We further provide a stronger baseline with a Motion-aware Prefix Adapter and a Multi-view Alignment Adapter to enhance motion reasoning and cross-view alignment. Experiments show that existing methods struggle on MoRe-UAV, while our baseline consistently improves grounding performance, highlighting substantial room for future research on motion-aware and multi-view grounding in UAV videos.
+              UAV visual grounding in real-world applications requires localizing a target referred to by language while both the target and the UAV move. Existing UAV grounding datasets mainly focus on images, while the few video-based benchmarks are still dominated by appearance and spatial cues. As a result, they do not adequately capture two key challenges: motion-centric grounding and drastic cross-view appearance changes caused by UAV ego-motion. To address this gap, we introduce <strong>MoRe-UAV</strong>, a large-scale benchmark for motion-aware visual grounding in UAV videos. MoRe-UAV contains 22,225 video-expression pairs and 7,415,622 annotated frames, covering diverse aerial scenes with moving targets and substantial viewpoint changes. We build the dataset through a scalable human-in-the-loop pipeline for efficient annotation with quality control. We establish an initial benchmark on MoRe-UAV with spatio-temporal video grounding methods, multimodal large language models, and hybrid MLLM+tracking pipelines. We further provide a stronger baseline with a Motion-aware Prefix Adapter and a Multi-view Alignment Adapter to enhance motion reasoning and cross-view alignment. Experiments show that existing methods struggle on MoRe-UAV and remain far below human performance, highlighting substantial room for future research on motion-aware and multi-view grounding in UAV videos.
             </p>
           </article>
 
@@ -103,26 +110,14 @@
               </div>
               <div class="fact-card">
                 <span class="fact-card__value">Motion-Centric</span>
-                <span class="fact-card__label">queries involving turning, following, crossing, and long-horizon interactions</span>
+                <span class="fact-card__label">queries involving turning, following, passing, crossing, and long-horizon interactions</span>
               </div>
               <div class="fact-card">
                 <span class="fact-card__value">Cross-View</span>
-                <span class="fact-card__label">strong appearance changes caused by UAV ego-motion and viewpoint shifts</span>
+                <span class="fact-card__label">strong appearance changes caused by UAV ego-motion, scale variation, and viewpoint shifts</span>
               </div>
             </div>
           </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--scene">
-      <div class="container">
-        <div class="scene-strip reveal">
-          <img src="./static/images/scene-strip.jpg" alt="Scene diversity strip for MoRe-UAV.">
-          <div class="scene-strip__overlay">
-            <span class="scene-pill">Diverse real-world UAV scenes</span>
-            <p>Urban traffic, campuses, parks, fields, mountains, coastal areas, wildlife, and nighttime clips collected from dedicated UAV flights.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -133,7 +128,7 @@
           <p class="section-kicker">Benchmark</p>
           <h2>What Makes MoRe-UAV Different</h2>
           <p>
-            Existing UAV grounding datasets mainly emphasize appearance or spatial cues. MoRe-UAV focuses on motion-aware grounding in videos with moving targets, moving viewpoints, and frame-level annotations over the full sequence.
+            Existing datasets mainly focus on image-level grounding or UAV video grounding with appearance-centric or spatial-centric expressions. MoRe-UAV instead targets motion-aware visual grounding in UAV videos with moving targets, strong viewpoint changes, and frame-level target annotations.
           </p>
         </div>
 
@@ -146,7 +141,7 @@
                     <th>Dataset</th>
                     <th>Type</th>
                     <th>Source</th>
-                    <th>#Samples</th>
+                    <th>#Videos / Images</th>
                     <th>#Frames</th>
                     <th>Expression Focus</th>
                     <th>Frame-level Ann.</th>
@@ -159,9 +154,9 @@
                     <td>AerialVG</td>
                     <td>Image</td>
                     <td>VisDrone2019</td>
-                    <td>--</td>
                     <td>5,000</td>
-                    <td>Appearance</td>
+                    <td>--</td>
+                    <td>Appearance-centric</td>
                     <td><span class="status status--no">No</span></td>
                     <td><span class="status status--no">No</span></td>
                     <td><span class="status status--no">No</span></td>
@@ -170,9 +165,20 @@
                     <td>DVGBench</td>
                     <td>Image</td>
                     <td>ERA + VisDrone</td>
-                    <td>--</td>
                     <td>2,863</td>
-                    <td>Appearance</td>
+                    <td>--</td>
+                    <td>Appearance-centric</td>
+                    <td><span class="status status--no">No</span></td>
+                    <td><span class="status status--no">No</span></td>
+                    <td><span class="status status--no">No</span></td>
+                  </tr>
+                  <tr>
+                    <td>UAVIT-1M</td>
+                    <td>Image</td>
+                    <td>low-altitude datasets</td>
+                    <td>789K</td>
+                    <td>--</td>
+                    <td>QA-style</td>
                     <td><span class="status status--no">No</span></td>
                     <td><span class="status status--no">No</span></td>
                     <td><span class="status status--no">No</span></td>
@@ -189,7 +195,7 @@
                     <td><span class="status status--no">No</span></td>
                   </tr>
                   <tr class="is-ours">
-                    <td>MoRe-UAV</td>
+                    <td>MoRe-UAV (Ours)</td>
                     <td>Video</td>
                     <td>Self-collected</td>
                     <td>22,225</td>
@@ -204,9 +210,9 @@
             </div>
           </article>
 
-          <aside class="panel benchmark-panel reveal">
+          <aside class="panel benchmark-panel benchmark-panel--snapshot reveal">
             <h3>Dataset Snapshot</h3>
-            <div class="split-grid">
+            <div class="split-grid split-grid--snapshot">
               <div class="split-card">
                 <span class="split-card__name">Train</span>
                 <span class="split-card__value">15,432</span>
@@ -221,12 +227,9 @@
               </div>
             </div>
 
-            <ul class="bullet-list">
-              <li>Collected through dedicated UAV flight missions across diverse real-world scenes.</li>
-              <li>Open-vocabulary scene and object labels are manually verified for analysis.</li>
-              <li>Motion-centric expressions emphasize behavior, trajectory, and interaction instead of static appearance alone.</li>
-              <li>Privacy-sensitive content is filtered through anonymization and manual screening.</li>
-              <li>Planned release: dataset under CC BY-NC 4.0 and benchmark code under the MIT License.</li>
+            <ul class="bullet-list bullet-list--snapshot">
+              <li>40,320 candidate video-expression pairs are filtered to 22,225 released pairs, a 55.1% acceptance rate after dual-review verification.</li>
+              <li>The dataset is intended for non-commercial academic research under CC BY-NC 4.0, and the benchmark code is released under the MIT License.</li>
             </ul>
           </aside>
         </div>
@@ -236,20 +239,20 @@
             <div class="figure-card__meta">Dataset Construction</div>
             <h3>Annotation Pipeline</h3>
             <img src="./static/images/annotation-pipeline.jpg" alt="Overview of the annotation pipeline for constructing MoRe-UAV.">
-            <p>Privacy preprocessing, trajectory annotation, motion-aware expression generation, and multi-stage manual verification.</p>
+            <p>Privacy and ethical review, trajectory annotation with manual correction, motion-aware expression generation, and dual-review human verification.</p>
           </article>
 
           <article class="panel figure-card reveal">
             <div class="figure-card__meta">Baseline Framework</div>
             <h3>Motion-Aware Grounding Framework</h3>
             <img src="./static/images/method-overview.jpg" alt="Overview of the proposed UAV video grounding framework.">
-            <p>Our framework introduces the Motion-aware Prefix Adapter and Multi-view Alignment Adapter on top of a frozen Qwen2.5-VL backbone.</p>
+            <p>Our lightweight benchmark baseline builds on a frozen Qwen2.5-VL backbone with parameter-efficient tuning, using MPA for motion-sensitive query modeling and MVA for cross-view temporal alignment.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-kicker">Qualitative Examples</p>
@@ -335,16 +338,6 @@
 
           <article class="gallery-card reveal">
             <video class="demo-video demo-video--gallery" muted loop playsinline controls preload="none">
-              <source data-src="./static/videos/gallery/elephants.mp4" type="video/mp4">
-            </video>
-            <div class="expression-box expression-box--gallery">
-              <span>Referring expression</span>
-              <p>An elephant stands near a pole among other elephants.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <video class="demo-video demo-video--gallery" muted loop playsinline controls preload="none">
               <source data-src="./static/videos/gallery/intersection_blocking.mp4" type="video/mp4">
             </video>
             <div class="expression-box expression-box--gallery">
@@ -370,26 +363,6 @@
             <div class="expression-box expression-box--gallery">
               <span>Referring expression</span>
               <p>A white car turns right into a parking lot.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <video class="demo-video demo-video--gallery" muted loop playsinline controls preload="none">
-              <source data-src="./static/videos/gallery/road_car.mp4" type="video/mp4">
-            </video>
-            <div class="expression-box expression-box--gallery">
-              <span>Referring expression</span>
-              <p>A black car passes a white car from right to left.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <video class="demo-video demo-video--gallery" muted loop playsinline controls preload="none">
-              <source data-src="./static/videos/gallery/square_people.mp4" type="video/mp4">
-            </video>
-            <div class="expression-box expression-box--gallery">
-              <span>Referring expression</span>
-              <p>A person in a dress walks across the square.</p>
             </div>
           </article>
 
@@ -446,195 +419,20 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-kicker">Results</p>
-          <h2>Existing Methods Struggle, Even Strong MLLMs</h2>
-          <p>
-            Motion reasoning and cross-view alignment both matter. Our motion-aware baseline substantially improves over direct MLLM grounding, MLLM plus tracking, and standard spatio-temporal grounding models.
-          </p>
-        </div>
-
-        <div class="gain-grid">
-          <div class="gain-card reveal">
-            <span class="gain-card__value">+9.22</span>
-            <span class="gain-card__label">mIoU over Qwen2.5-VL baseline</span>
-          </div>
-          <div class="gain-card reveal">
-            <span class="gain-card__value">+9.30</span>
-            <span class="gain-card__label">Acc@0.5 over Qwen2.5-VL baseline</span>
-          </div>
-          <div class="gain-card reveal">
-            <span class="gain-card__value">+11.08</span>
-            <span class="gain-card__label">Norm Precision over Qwen2.5-VL baseline</span>
-          </div>
-          <div class="gain-card reveal">
-            <span class="gain-card__value">+9.09</span>
-            <span class="gain-card__label">AUC over Qwen2.5-VL baseline</span>
-          </div>
-        </div>
-
-        <div class="results-grid">
-          <article class="panel table-panel reveal">
-            <div class="table-wrap">
-              <table class="results-table">
-                <thead>
-                  <tr>
-                    <th>Method</th>
-                    <th>mIoU</th>
-                    <th>Acc@0.5</th>
-                    <th>Norm Prec.</th>
-                    <th>AUC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="group-row">
-                    <td colspan="5">STVG Methods</td>
-                  </tr>
-                  <tr>
-                    <td>Co-grounding Model</td>
-                    <td>5.84</td>
-                    <td>5.10</td>
-                    <td>6.20</td>
-                    <td>5.55</td>
-                  </tr>
-                  <tr>
-                    <td>CG-STVG</td>
-                    <td>7.95</td>
-                    <td>7.10</td>
-                    <td>9.82</td>
-                    <td>8.33</td>
-                  </tr>
-
-                  <tr class="group-row">
-                    <td colspan="5">MLLM + Tracking</td>
-                  </tr>
-                  <tr>
-                    <td>MiniCPM-V + Tracker</td>
-                    <td>8.23</td>
-                    <td>6.58</td>
-                    <td>7.95</td>
-                    <td>8.61</td>
-                  </tr>
-                  <tr>
-                    <td>Qwen2.5-VL + Tracker</td>
-                    <td>9.48</td>
-                    <td>10.02</td>
-                    <td>11.25</td>
-                    <td>9.90</td>
-                  </tr>
-
-                  <tr class="group-row">
-                    <td colspan="5">Direct MLLM</td>
-                  </tr>
-                  <tr>
-                    <td>MiniCPM-V</td>
-                    <td>10.18</td>
-                    <td>10.93</td>
-                    <td>11.84</td>
-                    <td>10.59</td>
-                  </tr>
-                  <tr>
-                    <td>Qwen2.5-VL</td>
-                    <td>12.00</td>
-                    <td>10.95</td>
-                    <td>14.52</td>
-                    <td>12.36</td>
-                  </tr>
-
-                  <tr class="group-row">
-                    <td colspan="5">Ours</td>
-                  </tr>
-                  <tr class="is-ours">
-                    <td>MoRe-UAV (MiniCPM)</td>
-                    <td>19.12</td>
-                    <td>18.91</td>
-                    <td>21.34</td>
-                    <td>19.45</td>
-                  </tr>
-                  <tr class="is-ours">
-                    <td>MoRe-UAV (Qwen)</td>
-                    <td>21.22</td>
-                    <td>20.25</td>
-                    <td>25.60</td>
-                    <td>21.45</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
-
-          <aside class="panel ablation-panel reveal">
-            <h3>Ablation Snapshot</h3>
-            <p class="ablation-copy">
-              Both motion-aware language modeling and multi-view alignment matter. MPA and MVA each improve the Qwen2.5-VL baseline, and together they deliver the strongest results.
-            </p>
-            <div class="table-wrap">
-              <table class="ablation-table">
-                <thead>
-                  <tr>
-                    <th>Method</th>
-                    <th>mIoU</th>
-                    <th>AUC</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Qwen2.5-VL</td>
-                    <td>12.00</td>
-                    <td>12.36</td>
-                  </tr>
-                  <tr>
-                    <td>+ Motion Word Prompt</td>
-                    <td>14.35</td>
-                    <td>14.70</td>
-                  </tr>
-                  <tr>
-                    <td>+ MPA</td>
-                    <td>17.86</td>
-                    <td>18.10</td>
-                  </tr>
-                  <tr>
-                    <td>+ Pre-hint</td>
-                    <td>15.02</td>
-                    <td>15.38</td>
-                  </tr>
-                  <tr>
-                    <td>+ MVA</td>
-                    <td>18.74</td>
-                    <td>19.02</td>
-                  </tr>
-                  <tr class="is-ours">
-                    <td>+ MPA + MVA</td>
-                    <td>21.22</td>
-                    <td>21.45</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="takeaway-callout">
-              <span>Key takeaway</span>
-              <p>Motion modeling and multi-view alignment are complementary for UAV video grounding.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
     <section class="section section--alt">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-kicker">Citation</p>
-          <h2>Use This BibTeX Placeholder For Now</h2>
+          <h2>BibTeX</h2>
         </div>
 
         <div class="panel reveal">
           <pre class="bibtex"><code>@misc{zhang2026moreuav,
   title={MoRe-UAV: A Large-Scale Benchmark for Motion-Aware Visual Grounding in UAV Videos},
-  author={Zhipeng Zhang and Yiheng Zhang and Wei Suo and Le Liu and Peng Wang},
+  author={Zhipeng Zhang and Yiheng Zhang and Wei Suo and Le Liu and Ji Wang and Peng Wang},
   year={2026},
-  note={Paper and supplementary links will be updated after release.}
+  howpublished={\url{https://more-uav.github.io/}},
+  note={Project page, benchmark description, and release updates.}
 }</code></pre>
         </div>
       </div>
