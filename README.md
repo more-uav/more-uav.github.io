@@ -50,4 +50,6 @@ Your site URL will then be:
 
 - Run `./sync_site.sh` in this folder to stage, commit, rebase onto `origin/main`, and push the current website.
 - Or run `./sync_site.sh "your commit message"` if you want a custom commit message.
-- If GitHub asks for authentication during `git push`, use a valid PAT instead of your account password.
+- If GitHub requires token auth, run `GITHUB_PAT=your_token_here ./sync_site.sh`.
+- You can also use `GITHUB_TOKEN=...` if you prefer that variable name.
+- Do not use your GitHub account password for `git push`; GitHub requires a PAT or SSH key.
