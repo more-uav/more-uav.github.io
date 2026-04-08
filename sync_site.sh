@@ -7,6 +7,7 @@ cd "$ROOT_DIR"
 
 TOKEN="${GITHUB_PAT:-${GITHUB_TOKEN:-}}"
 GIT_AUTH_ARGS=()
+FORCE_MIRROR=0
 
 if [[ -n "$TOKEN" ]]; then
   AUTH_HEADER="$(printf 'x-access-token:%s' "$TOKEN" | base64 | tr -d '\n')"
@@ -27,6 +28,11 @@ if [[ "$BRANCH" != "main" ]]; then
   exit 1
 fi
 
+if [[ "${1:-}" == "--force-mirror" ]]; then
+  FORCE_MIRROR=1
+  shift
+fi
+
 COMMIT_MSG="${1:-Update website $(date '+%Y-%m-%d %H:%M:%S')}"
 
 echo "Fetching latest origin/main..."
@@ -42,11 +48,17 @@ else
   git commit -m "$COMMIT_MSG"
 fi
 
-echo "Rebasing onto origin/main..."
-git "${GIT_AUTH_ARGS[@]}" pull --rebase origin main
+if [[ "$FORCE_MIRROR" -eq 1 ]]; then
+  echo "Force-mirror mode: pushing local main to overwrite remote main..."
+  PUSH_CMD=(git "${GIT_AUTH_ARGS[@]}" push --force-with-lease origin main)
+else
+  echo "Rebasing onto origin/main..."
+  git "${GIT_AUTH_ARGS[@]}" pull --rebase origin main
+  echo "Pushing to origin/main..."
+  PUSH_CMD=(git "${GIT_AUTH_ARGS[@]}" push origin main)
+fi
 
-echo "Pushing to origin/main..."
-if ! git "${GIT_AUTH_ARGS[@]}" push origin main; then
+if ! "${PUSH_CMD[@]}"; then
   echo
   echo "Push failed."
   echo "If this repository needs GitHub token auth, rerun like this:"
